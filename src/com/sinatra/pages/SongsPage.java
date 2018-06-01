@@ -17,20 +17,20 @@ public class SongsPage {
 		WebElement createSongLnk; //linkText: Create a new song
 
 		//methods:
-		//recorrer las canciones???
+		
 		public void validateSongExists(String songName) {
-			WebElement tituloCancionLbl = driver.findElement(By.xpath("//h1[text()='"+songName+"']"));
-			if(tituloCancionLbl.isDisplayed()) {
-				System.out.println("La canción "+ tituloCancionLbl.getText() +" existe");
+			WebElement tituloCancionLnk = driver.findElement(By.xpath("//a[text()='"+songName+"']"));
+			if(tituloCancionLnk.isDisplayed()) {
+				System.out.println("La canción "+ tituloCancionLnk.getText() +" existe");
 			}else {
-				System.out.println("La canción "+ tituloCancionLbl.getText() +" no existe");
+				System.out.println("La canción "+ tituloCancionLnk.getText() +" no existe");
 				
 			}
 			
 		}
 		
 		public void createSong() {
-			driver.findElement(By.xpath("//a[@href='/songs/new']")).click();
+			driver.findElement(By.xpath("//a[@href='/songs']")).click();
 						
 		}
 		

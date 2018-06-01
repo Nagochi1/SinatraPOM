@@ -18,7 +18,7 @@ public class SinatraTestCasePOM extends SinatraBasePOM {
 		
 	}
 	
-	@Test
+	//@Test
 	public void logOutTestCase() {
 		home.logIn(usuario,pwd);
 		home.logOut();
@@ -27,12 +27,12 @@ public class SinatraTestCasePOM extends SinatraBasePOM {
 	@Test
 	public void SongsTestCase() {
 		song.logIn(usuario,pwd);
-		song.validateSongExists(songName);
 		song.createSong();
+		song.validateSongExists(songName);
 		song.logOut();
 	}
 	
-	@Test
+	//@Test
 	public void AddSongTestCase() {
 		addSong.logIn(usuario,pwd);
 		addSong.addNewSong(songName, length, date, lyrics);

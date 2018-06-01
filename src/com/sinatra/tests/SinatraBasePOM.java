@@ -40,7 +40,7 @@ public class SinatraBasePOM {
 	
 	@After
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 	
 }

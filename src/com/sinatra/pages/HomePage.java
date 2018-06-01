@@ -37,5 +37,5 @@ public class HomePage {
 			driver.findElement(By.xpath("//a[@href='/logout']")).click();
 			
 		}
-
-}
+		
+	}
